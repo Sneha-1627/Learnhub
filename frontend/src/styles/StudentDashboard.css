@@ -1,0 +1,89 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background-image: url('https://wallpapercave.com/wp/wp10455999.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+
+.dashboard h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f8f8f8;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.919);
+}
+
+
+.stu-course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h4 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #5519e2;
+  font-weight: 900;
+}
+
+.course-card p {
+  margin: 6px 0;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+
+.course-card button {
+  margin-top: 12px;
+  background-color: #0bb633;
+  color: rgb(9, 1, 1);
+  font-weight: 900;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+  background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .course-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

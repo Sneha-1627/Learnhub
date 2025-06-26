@@ -1,0 +1,80 @@
+.admin-dashboard {
+  padding: 40px;
+  min-height: 100vh;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/380/505/small_2x/abstract-background-with-dark-triangles-and-light-above-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  color: #f8fafc;
+  font-weight: bold;
+}
+
+.user-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.user-box {
+  flex: 1 1 100%;
+  background-color: transparent;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(197, 205, 205, 0.5);
+  overflow-x: auto;
+}
+
+.user-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(236, 238, 232);
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f3f0d8;
+  padding-bottom: 6px;
+}
+
+.user-box table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fae0e0;
+}
+
+.user-box th, .user-box td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #0d0a0a;
+  font-size: 0.95rem;
+}
+
+.user-box th {
+  background-color: #080707;
+  color: #e3e1d7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.user-box tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .user-box {
+    padding: 15px;
+  }
+
+  .user-box table {
+    font-size: 0.85rem;
+  }
+
+  .user-box h3 {
+    font-size: 1.3rem;
+  }
+}
